@@ -1,0 +1,29 @@
+# Secrets
+.env
+
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+
+# VS Code
+.vscode/
+
+# Test coverage
+htmlcov/
+.coverage
+
+
+
+# Django local database (don’t deploy local dev DB)
+db.sqlite3
+
+# Logs
+*.log
+
+# Media files (user uploads, usually handled in production storage)
+media/
+
+# Collected static files (generated during deploy)
+staticfiles/
