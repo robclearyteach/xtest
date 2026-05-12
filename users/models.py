@@ -11,8 +11,9 @@ class Profile(models.Model):
     def __str__(self):
         return f'{self.user.username} Profile'
 
-    #updated save() to only Image.open(self.image.path) 
-    #   if an image was provided (otherwise causes exception)
+    # updated save() to only Image.open(self.image.path) 
+    #   if an image was provided 
+	#	(self.image.path doesn't exist if no image provided)
     def save(self, *args, **kwargs):
         super().save(*args, **kwargs)
 
