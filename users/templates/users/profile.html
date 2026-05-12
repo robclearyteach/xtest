@@ -3,11 +3,11 @@
 {% block content %}
 <div class="content-section">
     <div class="media">
-        {# <!-- <img class="rounded-circle account-img" src="{{ user.profile.image.url }}"> --> #}
-        {% if user.profile.image and user.profile.image.name %}
-            <img src="{{ user.profile.image.url }}">
+        
+        {% if user.profile.image %}
+            <img class="rounded-circle account-img" src="{{ user.profile.image.url }}"> 
         {% else %}
-            <img src="{% static 'blog/default.jpg' %}">
+            <img class="rounded-circle account-img" src="{% static 'blog/default.jpg' %}"> 
         {% endif %}
         <div class="media-body">
             <h2 class="account-heading">{{ user.username }}</h2>
